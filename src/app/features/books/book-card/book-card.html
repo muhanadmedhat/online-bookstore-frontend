@@ -11,5 +11,12 @@
       <span class="text-accent font-bold text-sm">${{ book().price }}</span>
       <span class="text-xs text-yellow-400">★ {{ book().averageRating }}</span>
     </div>
+    <div class="mt-1">
+      @if (book().quantity === 0) {
+        <span class="text-xs font-medium text-red-500">● Out of Stock</span>
+      } @else {
+        <span class="text-xs font-medium text-green-500">● In Stock</span>
+      }
+    </div>
   </div>
 </div>
