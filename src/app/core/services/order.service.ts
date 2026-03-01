@@ -33,10 +33,11 @@ export class OrderService {
 
   createOrder(shippingAddress: ShippingAddress, paymentMethod: PaymentMethod): Observable<Order> {
     const body = {
-      shipping_address: shippingAddress,
-      payment_method: paymentMethod,
+      shippingAddress: shippingAddress,
+      paymentMethod: paymentMethod,
     };
-    return this._httpClient.post<Order>(this.API, body);
+    console.log(this.API);
+    return this._httpClient.post<Order>(`${this.API}/orders`, body);
   }
   getAllOrders(page = 1, status?: string, user?: string) {
     let params = new HttpParams().set('page', page.toString());
