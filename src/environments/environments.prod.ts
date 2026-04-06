@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://chapterone-backend-env.eba-7e8ubqnj.us-east-1.elasticbeanstalk.com',
+  apiUrl: 'https://koyav7nd34.execute-api.us-east-1.amazonaws.com',
 };

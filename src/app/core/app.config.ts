@@ -5,7 +5,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     {
       provide: API_URL,
-      useValue: 'http://chapterone-backend-env.eba-7e8ubqnj.us-east-1.elasticbeanstalk.com/',
+      useValue: 'https://koyav7nd34.execute-api.us-east-1.amazonaws.com/',
     },
   ],
 };
